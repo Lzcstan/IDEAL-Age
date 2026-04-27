@@ -55,6 +55,7 @@ We provide several pretrained checkpoints for reproducibility and downstream inf
 These checkpoints can be used with `predict_with_deepsets.py` or loaded manually in PyTorch for evaluation and interpretation.
 
 > Please make sure that the input gene set, preprocessing strategy, and model configuration are consistent with the checkpoint you use.
+
 | Model | Training Set | Epochs | Download Link |
 |:---|:---|:---|:---|
 | main model [Ensemble-DeepSets] | AIDA, OneK1K | 60 | [Download](https://disk.pku.edu.cn/link/AAC39485B4DF9043FC8F270C2E2CFD16D4) |
