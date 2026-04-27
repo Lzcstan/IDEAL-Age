@@ -49,6 +49,21 @@ The project expects a specific directory structure. By default, scripts look for
     └── ...
 ```
 
+## 📦 Pretrained Checkpoints
+
+We provide several pretrained checkpoints for reproducibility and downstream inference.  
+These checkpoints can be used with `predict_with_deepsets.py` or loaded manually in PyTorch for evaluation and interpretation.
+
+> Please make sure that the input gene set, preprocessing strategy, and model configuration are consistent with the checkpoint you use.
+| Model | Training Set | Epochs | Download Link |
+|:---|:---|:---|:---|
+| main model [Ensemble-DeepSets] | AIDA, OneK1K | 60 | [Download](https://disk.pku.edu.cn/link/AAC39485B4DF9043FC8F270C2E2CFD16D4) |
+| SC2018 | AIDA, OneK1K, SC2018 | 60 | [Download](https://disk.pku.edu.cn/link/AA4954B60BCCDE4457ACB22A61E9E21F22) |
+| siAge | AIDA, OneK1K, siAge | 50 | [Download](https://disk.pku.edu.cn/link/AA7A491ABEA5374BAF83670D61857678B4) |
+| siAge (extreme) [Ensemble-DeepSets (tuning)] | AIDA, OneK1K, siAge (age < 20 or age > 80) | 60 | [Download](https://disk.pku.edu.cn/link/AA81F2EF1231D34366B88CA5DBCB107DBF) |
+| SC2018 + siAge | AIDA, OneK1K, SC2018, siAge | 50 | [Download](https://disk.pku.edu.cn/link/AAC340B295DEAB41B4A42A2DF8B46E03FD) |
+| SC2018 + siAge (extreme) | AIDA, OneK1K, SC2018, siAge (age < 20 or age > 80) | 60 | [Download](https://disk.pku.edu.cn/link/AAD70EAA9859BC4EC3BFD283C481F40F59) |
+
 ## 🚀 Usage
 
 ### Mode A: Ensemble Training (AutoGluon + DeepSets)
@@ -109,7 +124,7 @@ Key parameters are located at the top of `ag_integrat_gene_mae_sweep.py` and `ag
 MAX_CELLS_PER_DONOR = 1000  # Downsample large donors for memory efficiency
 CACHE_DIR = "./donor_cache_ag_all_gene" # Location for cached pickle files
 USE_RAW = False             # Whether to use raw counts or log1p data
-EPOCH = 105                 # Training epochs for the DeepSets component
+EPOCH = 60                 # Training epochs for the DeepSets component
 ```
 
 ## 🤝 Contributing
