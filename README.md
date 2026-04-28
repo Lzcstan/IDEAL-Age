@@ -1,6 +1,6 @@
-# EnsembleDeepSets: Immunological Deep Ensemble with Attention for Age prediction framework
+# IDEAL-Age: Interpretable Deep Ensemble with Attention for immunoLogical Age prediction
 
-**EnsembleDeepSets** is a robust machine learning framework designed to predict donor age from single-cell RNA sequencing (scRNA-seq) data. It integrates the interpretability of **DeepSets** architectures with the robust performance of **AutoGluon** tabular ensembles.
+**IDEAL-Age** (formerly EnsembleDeepSets) is a robust machine learning framework designed to predict donor age from single-cell RNA sequencing (scRNA-seq) data. It integrates the interpretability of **DeepSets** architectures with the robust performance of **AutoGluon** tabular ensembles.
 
 ## 🌟 Key Features
 
@@ -13,8 +13,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Lzcstan/EnsembleDeepSets.git
-cd EnsembleDeepSets
+git clone https://github.com/Lzcstan/IDEAL-Age.git
+cd IDEAL-Age
 ```
 
 ### 2. Environment Setup
@@ -58,10 +58,10 @@ These checkpoints can be used with `predict_with_deepsets.py` or loaded manually
 
 | Model | Training Set | Epochs | Download Link |
 |:---|:---|:---|:---|
-| main model [Ensemble-DeepSets] | AIDA, OneK1K | 60 | [Download](https://disk.pku.edu.cn/link/AAC39485B4DF9043FC8F270C2E2CFD16D4) |
+| main model [IDEAL-Age] | AIDA, OneK1K | 60 | [Download](https://disk.pku.edu.cn/link/AAC39485B4DF9043FC8F270C2E2CFD16D4) |
 | SC2018 | AIDA, OneK1K, SC2018 | 60 | [Download](https://disk.pku.edu.cn/link/AA4954B60BCCDE4457ACB22A61E9E21F22) |
 | siAge | AIDA, OneK1K, siAge | 50 | [Download](https://disk.pku.edu.cn/link/AA7A491ABEA5374BAF83670D61857678B4) |
-| siAge (extreme) [Ensemble-DeepSets (tuning)] | AIDA, OneK1K, siAge (age < 20 or age > 80) | 60 | [Download](https://disk.pku.edu.cn/link/AA81F2EF1231D34366B88CA5DBCB107DBF) |
+| siAge (extreme) [IDEAL-Age (tuning)] | AIDA, OneK1K, siAge (age < 20 or age > 80) | 60 | [Download](https://disk.pku.edu.cn/link/AA81F2EF1231D34366B88CA5DBCB107DBF) |
 | SC2018 + siAge | AIDA, OneK1K, SC2018, siAge | 50 | [Download](https://disk.pku.edu.cn/link/AAC340B295DEAB41B4A42A2DF8B46E03FD) |
 | SC2018 + siAge (extreme) | AIDA, OneK1K, SC2018, siAge (age < 20 or age > 80) | 60 | [Download](https://disk.pku.edu.cn/link/AAD70EAA9859BC4EC3BFD283C481F40F59) |
 
@@ -112,7 +112,7 @@ python predict_with_deepsets.py
 
 ## 🧠 Interpretability
 
-EnsembleDeepSets provides two kinds of interpretability:
+IDEAL-Age provides two kinds of interpretability:
 
 1.  **Cell-Level**: Using attention weights or gradient-based methods.
 2.  **Gene-Level**: Using gradient-based methods.
