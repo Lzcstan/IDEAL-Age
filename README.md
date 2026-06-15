@@ -134,4 +134,4 @@ Contributions are welcome! Please ensure you update `requirements.txt` if adding
 
 ## 📜 License
 
-MIT License
+[MIT License](https://github.com/Lzcstan/IDEAL-Age/blob/main/LICENSE)
