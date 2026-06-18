@@ -64,6 +64,8 @@ These checkpoints can be used with `predict_with_deepsets.py` or loaded manually
 | siAge (extreme) [IDEAL-Age (tuning)] | AIDA, OneK1K, siAge (age < 20 or age > 80) | 60 | [Download](https://disk.pku.edu.cn/link/AA81F2EF1231D34366B88CA5DBCB107DBF) |
 | SC2018 + siAge | AIDA, OneK1K, SC2018, siAge | 50 | [Download](https://disk.pku.edu.cn/link/AAC340B295DEAB41B4A42A2DF8B46E03FD) |
 | SC2018 + siAge (extreme) | AIDA, OneK1K, SC2018, siAge (age < 20 or age > 80) | 60 | [Download](https://disk.pku.edu.cn/link/AAD70EAA9859BC4EC3BFD283C481F40F59) |
+| ablation model with Reg&Cls losses | AIDA, OneK1K | 60 | [Download](https://disk.pku.edu.cn/link/AA23C9EED1850242C9AFA417A812EEE89B) |
+| ablation model with Reg loss only | AIDA, OneK1K | 60 | [Download](https://disk.pku.edu.cn/link/AAF152DB7091F64F648613C7501DA57661) |
 
 ## 🚀 Usage
 
